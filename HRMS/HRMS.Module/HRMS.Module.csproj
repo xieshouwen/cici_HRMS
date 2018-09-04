@@ -91,6 +91,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessObjects\ORMDataModel_HRMSCode\ConnectionHelper.cs" />
+    <Compile Include="BusinessObjects\ORMDataModel_HRMSCode\Employees.cs" />
+    <Compile Include="BusinessObjects\ORMDataModel_HRMSCode\Employees.Designer.cs">
+      <DependentUpon>Employees.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
@@ -108,6 +113,12 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="BusinessObjects\ORMDataModel_HRMS.xpo">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BusinessObjects\ORMDataModel_HRMS.xpo.diagram">
+      <DependentUpon>ORMDataModel_HRMS.xpo</DependentUpon>
+    </None>
     <None Include="DatabaseUpdate\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
